@@ -2,23 +2,102 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Kavaklık Kahve</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekom — Endüstriyel Elektronik Kart Tamiri</title>
+  <meta name="description" content="Sürücü kartları, güç kaynakları ve kontrol kartlarının arıza tespiti ve onarımı. Test raporlu teslim, 6 ay garanti.">
   <style>
+    :root {
+      --murekkep: #16191d;
+      --soluk:   #6a7078;
+      --vurgu:   #b45309;
+      --cizgi:   #e4e2dd;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: system-ui, sans-serif;
-      max-width: 600px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      color: var(--murekkep);
+      line-height: 1.65;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
     }
-    h1 { color: #0f5257; }
+
+    h1 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .ozet {
+      font-size: 18px;
+      color: var(--soluk);
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--soluk);
+      margin: 40px 0 14px;
+      padding-top: 28px;
+      border-top: 1px solid var(--cizgi);
+    }
+
+    p { margin-bottom: 12px; }
+
+    ul {
+      margin: 0 0 12px 20px;   /* soldaki 20px madde işaretleri için boşluk */
+    }
+
+    li { margin-bottom: 6px; }
+
+    a { color: var(--vurgu); }
+
+    .satir { display: flex; gap: 12px; margin-bottom: 8px; }
+    .etiket { color: var(--soluk); min-width: 80px; }
   </style>
 </head>
 <body>
 
-  <h1>Kavaklık Kahve</h1>
-  <p>Ankara Kavaklıdere'de kendi kavurduğumuz çekirdeklerle kahve yapıyoruz.</p>
-  <p>Hafta içi 08.00 - 20.00 arası açığız.</p>
+  <h1>Ekom Elektronik</h1>
+  <p class="ozet">Endüstriyel elektronik kartların arıza tespiti ve onarımı. Yeni kart almadan önce bir de bize gösterin.</p>
+
+  <h2>Tamir ettiğimiz kartlar</h2>
+  <ul>
+    <li>AC/DC motor sürücü kartları</li>
+    <li>Anahtarlamalı güç kaynakları</li>
+    <li>PLC ve kontrol kartları</li>
+    <li>CNC tezgâh kartları</li>
+    <li>Servo sürücüler ve enkoder kartları</li>
+  </ul>
+  <p>Markası veya yaşı fark etmez. Üretimden kalkmış, yedek parçası bulunmayan kartlarda da çalışıyoruz.</p>
+
+  <h2>Nasıl çalışıyor</h2>
+  <p><strong>1. Arıza tespiti.</strong> Kartı kargoyla gönderin veya getirin. Test edip arızayı çıkarıyoruz.</p>
+  <p><strong>2. Teklif.</strong> Onarım bedelini ve süreyi bildiriyoruz. Onaylamazsanız ücret çıkmaz.</p>
+  <p><strong>3. Onarım ve test.</strong> Kart yük altında test edilip raporuyla birlikte teslim edilir.</p>
+  <p><strong>4. Garanti.</strong> Yapılan işleme 6 ay garanti veriyoruz.</p>
+
+  <h2>İletişim</h2>
+  <div class="satir">
+    <span class="etiket">Telefon</span>
+    <span><a href="tel:+903120000000">0312 000 00 00</a></span>
+  </div>
+  <div class="satir">
+    <span class="etiket">E-posta</span>
+    <span><a href="mailto:info@ornek.com">info@ornek.com</a></span>
+  </div>
+  <div class="satir">
+    <span class="etiket">Adres</span>
+    <span>Ostim OSB, Ankara</span>
+  </div>
+  <div class="satir">
+    <span class="etiket">Saatler</span>
+    <span>Hafta içi 08.30–18.00</span>
+  </div>
 
 </body>
 </html>
